@@ -6,6 +6,9 @@
 //require __DIR__ . '/../app/Controllers/HomeController.php';   // Contrôleur de la page d'accueil
 //require __DIR__ . '/../app/Models/ArticleModel.php';          // Modèle pour la gestion des articles
 require_once __dir__ . '/../vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__."/..");
+$dotenv->safeLoad();
 // Importation des classes avec namespaces pour éviter les conflits de noms
 use Core\Router;
 use App\Controllers\HomeController;
