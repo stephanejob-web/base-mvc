@@ -27,4 +27,10 @@ class HomeController extends BaseController
             'title' => 'Bienvenue sur le mini-MVC'
         ]);
     }
+
+    public function about(): void{
+        $this->render('home/about', [
+           'title' =>  "A propos"
+        ]);
+    }
 }
